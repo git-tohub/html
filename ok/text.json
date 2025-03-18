@@ -1,15 +1,3 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "text.html",
-            "use": "@vercel/static"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/",
-            "dest": "/text.html"
-        }
-    ]
+    "rewrites":[{"source":"/:path*","destination": "/text.html"}]
 }
